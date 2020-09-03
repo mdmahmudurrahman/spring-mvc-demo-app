@@ -16,11 +16,22 @@
 		  <br><br>
 		  Country : 
 		  <form:select path="country">
-		  	<form:option value="BD" label="Bangladesh"></form:option>
-		  	<form:option value="GRM" label="Germany"></form:option>
-		  	<form:option value="IND" label="India"></form:option>
-		  	<form:option value="PK" label="Pakistan"></form:option>
+		  	<form:options items="${student.countryOptions}"></form:options>
 		  </form:select>
+		  <br><br>
+		  Favourite Language : 
+		  Java <form:radiobutton path="favouriteLanguage" value="Java" />
+		  C# <form:radiobutton path="favouriteLanguage" value="C#" />
+		  Ruby <form:radiobutton path="favouriteLanguage" value="Ruby" />
+		  JavaScript <form:radiobutton path="favouriteLanguage" value="JavaScript" />
+		  
+		  <br><br>
+		  Operating Systems : 
+		  Java <form:checkbox path="operatingSystems" value="Windows" />
+		  C# <form:checkbox path="operatingSystems" value="Linux" />
+		  Ruby <form:checkbox path="operatingSystems" value="Mac" />
+		  JavaScript <form:checkbox path="operatingSystems" value="ABCD" />
+		  
 		  <br><br>
 		  <input type="submit" value="submit">
 		</form:form>
