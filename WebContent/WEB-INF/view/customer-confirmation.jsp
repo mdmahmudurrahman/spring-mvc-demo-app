@@ -10,5 +10,7 @@
 		<hr>
 		The customer is confirmed: ${customer.firstName} ${customer.lastName}
 		<br><br>
+		Course code is : ${customer.courseCode}
+		<br><br>
 	</body>
 </html>
